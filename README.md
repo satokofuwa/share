@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+* rails new 実行
+* config修正　CSS javascript Helper 自動作成不可
