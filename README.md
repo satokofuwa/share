@@ -24,3 +24,5 @@ Things you may want to cover:
 * ...
 * rails new 実行
 * config修正　CSS javascript Helper 自動作成不可
+* webpacker 5.4.3 に変更
+* bundle exec webpacker install とcompile実行
