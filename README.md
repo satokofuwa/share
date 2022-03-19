@@ -27,3 +27,4 @@ Things you may want to cover:
 * bundle exec webpacker install とcompile実行
 * rails db:create 実行
 * users controller作成
+* config修正
