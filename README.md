@@ -26,3 +26,4 @@ Things you may want to cover:
 * webpacker 5.4.3 に変更
 * bundle exec webpacker install とcompile実行
 * rails db:create 実行
+* users controller作成
