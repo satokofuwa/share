@@ -2,7 +2,6 @@
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
-
 Things you may want to cover:
 
 * Ruby version
@@ -26,3 +25,4 @@ Things you may want to cover:
 * config修正　CSS javascript Helper 自動作成不可
 * webpacker 5.4.3 に変更
 * bundle exec webpacker install とcompile実行
+* rails db:create 実行
