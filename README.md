@@ -28,3 +28,5 @@ Things you may want to cover:
 * rails db:create 実行
 * users controller作成
 * config修正
+* database.yml コメントアウト
+* migration CreateUsers 作成configの中身にエラーがあったので元に戻す
