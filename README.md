@@ -29,4 +29,6 @@ Things you may want to cover:
 * users controller作成
 * config修正
 * database.yml コメントアウト
-* migration CreateUsers 作成configの中身にエラーがあったので元に戻す
+* migration CreateUsers 作成　configの中身にエラーがあったので元に戻す
+* users new viewfile 作成
+
