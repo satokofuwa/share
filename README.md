@@ -54,3 +54,4 @@ Things you may want to cover:
 * ログアウト機能追加
 * user _form edit view file 作成
 * user _form edit 内容作成
+* users_helper 作成
