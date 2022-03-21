@@ -31,4 +31,5 @@ Things you may want to cover:
 * database.yml コメントアウト
 * migration CreateUsers 作成　configの中身にエラーがあったので元に戻す
 * users new viewfile 作成
-
+* users/showファイル作成
+* sessions コントローラー作成
