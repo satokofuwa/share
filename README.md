@@ -44,4 +44,6 @@ Things you may want to cover:
 * sessions_helper作成
 * initializer 配下にlocale.rbを作成
 * バリデーションエラーメッセージ日本語化
+* model.ja.yml作成
+
 
