@@ -33,3 +33,5 @@ Things you may want to cover:
 * users new viewfile 作成
 * users/showファイル作成
 * sessions コントローラー作成
+* sessionsコントローラー中身作成
+* sessionsView 作成
