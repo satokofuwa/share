@@ -48,4 +48,5 @@ Things you may want to cover:
 * user new 画面作成
 * userカラム名img →imageへ
 * schrmaファイル変更
+* imagemagick  インストール
 
