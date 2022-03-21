@@ -42,4 +42,5 @@ Things you may want to cover:
 * Gemfile修正 bcrypt バグ修正機能追加"
 * ApplicationControllerコード記述
 * sessions_helper作成
-* 
+* initializer 配下にlocale.rbを作成
+
