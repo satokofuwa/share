@@ -49,4 +49,4 @@ Things you may want to cover:
 * userカラム名img →imageへ
 * schrmaファイル変更
 * imagemagick  インストール
-
+* Gemfile Carreiewave mini_magick インストール
