@@ -37,3 +37,4 @@ Things you may want to cover:
 * sessionsView 作成
 * sessions new view file 作成
 * configu 追加・修正
+* model編集email小文字処理追加
