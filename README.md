@@ -41,3 +41,5 @@ Things you may want to cover:
 * models編集名前email入力文字数制限パスワードの長さ制限
 * Gemfile修正 bcrypt バグ修正機能追加"
 * ApplicationControllerコード記述
+* sessions_helper作成
+* 
