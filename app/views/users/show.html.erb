@@ -1,8 +1,8 @@
 <h1><%= @user.name %>のページ</h1>
 <div>
-  <a class="p-2 text-dark" href="/feeds/">ユーザー画像一覧へ</a>
+ <!--  <a class="p-2 text-dark" href="/feeds/">ユーザー画像一覧へ</a> -->
 </div> 
 <p>名前: <%= @user.name %></p>
 <p>メールアドレス: <%= @user.email %></p>
 <p> パスワード: <%= @user.password %></p>
-<p> 画像: <%= image_tag (feed.image.url), size: '320x240' if feed.image && feed.image.url%></p>
+<p> 画像: <%=image_tag (@user.image.url), size: '320x240' if @user.image && @user.image.url%></p>

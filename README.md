@@ -50,3 +50,4 @@ Things you may want to cover:
 * schrmaファイル変更
 * imagemagick  インストール
 * Gemfile Carreiewave mini_magick インストール
+* user model uploader紐付け
