@@ -43,4 +43,5 @@ Things you may want to cover:
 * ApplicationControllerコード記述
 * sessions_helper作成
 * initializer 配下にlocale.rbを作成
+* バリデーションエラーメッセージ日本語化
 
