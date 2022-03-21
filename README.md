@@ -46,5 +46,6 @@ Things you may want to cover:
 * バリデーションエラーメッセージ日本語化
 * model.ja.yml作成
 * user new 画面作成
-
+* userカラム名img →imageへ
+* schrmaファイル変更
 
