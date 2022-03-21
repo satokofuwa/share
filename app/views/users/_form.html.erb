@@ -1,0 +1,26 @@
+
+  <%= form_with(model: @user, local: true,url:choose_new_or_edit) do |form| %>
+  <div class="field">
+    <strong><%= form.label :image %></strong>
+      <br>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+        <%= f.label :email %>
+        <%= f.email_field :email %>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation %>
+        <%= image_tag (@user.image.url), size: '320x240' if @user.image && @user.image.url%>
+        <%= f.file_field :image %>
+        <%= f.hidden_field :image_cache %>
+      <br>
+      <br>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+<%= link_to " 更新する ", new_session_path %> 
+<%= link_to "一覧画面にもどる", feeds_path %>

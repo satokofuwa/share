@@ -52,3 +52,4 @@ Things you may want to cover:
 * Gemfile Carreiewave mini_magick インストール
 * user model uploader紐付け
 * ログアウト機能追加
+* user _form edit view file 作成
