@@ -38,3 +38,4 @@ Things you may want to cover:
 * sessions new view file 作成
 * configu 追加・修正
 * model編集email小文字処理追加
+* models編集名前email入力文字数制限パスワードの長さ制限
