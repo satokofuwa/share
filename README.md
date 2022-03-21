@@ -51,3 +51,4 @@ Things you may want to cover:
 * imagemagick  インストール
 * Gemfile Carreiewave mini_magick インストール
 * user model uploader紐付け
+* ログアウト機能追加
