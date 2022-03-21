@@ -36,3 +36,4 @@ Things you may want to cover:
 * sessionsコントローラー中身作成
 * sessionsView 作成
 * sessions new view file 作成
+* configu 追加・修正
