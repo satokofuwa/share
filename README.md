@@ -53,3 +53,4 @@ Things you may want to cover:
 * user model uploader紐付け
 * ログアウト機能追加
 * user _form edit view file 作成
+* user _form edit 内容作成
