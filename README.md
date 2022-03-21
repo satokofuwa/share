@@ -35,3 +35,4 @@ Things you may want to cover:
 * sessions コントローラー作成
 * sessionsコントローラー中身作成
 * sessionsView 作成
+* sessions new view file 作成
