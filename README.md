@@ -45,5 +45,6 @@ Things you may want to cover:
 * initializer 配下にlocale.rbを作成
 * バリデーションエラーメッセージ日本語化
 * model.ja.yml作成
+* user new 画面作成
 
 
