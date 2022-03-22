@@ -64,5 +64,6 @@ Things you may want to cover:
 * likes編集　resources指定
 * Post New画面作成
 * rails g model post 実行
+* rails g controller posts 実行
 
 
