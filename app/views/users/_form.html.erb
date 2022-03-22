@@ -1,7 +1,7 @@
 
-  <%= form_with(model: @user, local: true,url:choose_new_or_edit) do |form| %>
+  <%= form_with(model: @user, local: true) do |f| %>
   <div class="field">
-    <strong><%= form.label :image %></strong>
+    <strong><%= f.label :image %></strong>
       <br>
         <%= f.label :name %>
         <%= f.text_field :name %>
