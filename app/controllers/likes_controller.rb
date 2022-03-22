@@ -1,9 +1,10 @@
 class LikesController < ApplicationController
-    before_action :set_likes, only: %i[ create destroy ]
+    before_action :set_likes, only: %i[ :create, :destroy ]
 
   def create
     if @likes.save
-        redirect_to post_path
+        redirect_to post_path, notice: "お気に入りに追加しました"
+    else
   end
 
   def delete
