@@ -11,16 +11,16 @@
     <% @posts.each do |p| %>
       <tr>
         <td><%= p.image %></td>
-        <%= link_to "Show me", post_path %> 
+        <%= link_to "show_me", post_path(p.id) %> 
         <td><%= p.title %> </td>
 
-         <% if  current_user.id == post.user.id%> 
-        <td><%= link_to 'Edit', edit_post_path(feed.id)%></td>
-        <td><%= button_to 'Destroy',post_path(feed.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+         <% if  current_user.id == p.id%> 
+        <td><%= link_to 'Edit', edit_post_path(p.id)%></td>
+        <td><%= button_to 'Destroy',post_path(p.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
       </tr>
     <% end %>
-  </tbody>
+ </tbody>
 </table>
 <br>
 <%= link_to 'New Post', new_post_path %>

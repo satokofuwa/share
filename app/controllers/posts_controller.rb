@@ -13,12 +13,9 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     if @post.save
         render :show, notice:'投稿に成功しました!'
-    else
-        render :new
-        flash[:notice] = '登録できません。'
-    
     end
   end
+  
   def update
     respond_to do |format|
       if @post.update(post_params)
@@ -42,7 +39,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title,:content,:image,:image_url,:image_cache)
+    params.require(:post).permit(:title,:content,:image,:image_url,:image_cache,:id)
   end
   def set_post
     @post = Post.find(params[:id])

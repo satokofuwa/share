@@ -67,6 +67,6 @@ Things you may want to cover:
 * rails g controller posts 実行
 * post画面の作成
 * post index 画面修正
-
+* post models修正
 
 

@@ -1,5 +1,5 @@
 
-<p> image: <%= post.image %></p>
-<p>Title: <%= post.title %></p>
-<p> Content: <%= post.content %></p>
-<p> 画像: <%=image_tag (@post.image.url), size: '320x240'%></p>
+<p> image: <%= @post.image %></p>
+<p>Title: <%= @post.title %></p>
+<p> Content: <%= @post.content %></p>
+<p> 画像: <%=image_tag (@post.image.url), size: '320x240' if @post.image && @post.image.url%></p>
