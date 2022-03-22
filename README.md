@@ -59,5 +59,6 @@ Things you may want to cover:
 * 更新画面修正
 * favorites テーブル作成
 * model like 作成
+* migration 中間テーブルlike作成
 
 
