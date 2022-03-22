@@ -60,5 +60,6 @@ Things you may want to cover:
 * favorites テーブル作成
 * model like 作成
 * migration 中間テーブルlike作成
+* ルートにLike追加
 
 
