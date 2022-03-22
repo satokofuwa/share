@@ -62,4 +62,6 @@ Things you may want to cover:
 * migration 中間テーブルlike作成
 * ルートにLike追加
 * likes編集　resources指定
+* Post New画面作成
+
 
