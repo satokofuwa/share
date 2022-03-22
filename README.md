@@ -56,3 +56,6 @@ Things you may want to cover:
 * user _form edit 内容作成
 * users_helper 作成
 * users_helper current_user参照作成
+* 更新画面修正
+* favorites テーブル作成
+
