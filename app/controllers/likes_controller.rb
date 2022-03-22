@@ -4,10 +4,11 @@ class LikesController < ApplicationController
   def create
     if @likes.save
         redirect_to post_path, notice: "お気に入りに追加しました"
-    else
-  end
+    end
 
   def delete
+    @like.destroy
+    redirect_to post_path,notice: "お気に入りを削除しました"
   end
 
   private
@@ -18,5 +19,7 @@ class LikesController < ApplicationController
     @like = current_user.likes.build(likes_params)
   end
 
+  end
 end
+
 
