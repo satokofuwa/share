@@ -10,15 +10,19 @@ class PostsController < ApplicationController
   end
 
   def create
+    @post = Post.new(post_params)
     if @post.save
-        redirect_to post_path #show 画面へ
+        render :show, notice:'投稿に成功しました!'
+    else
+        render :new
+        flash[:notice] = '登録できません。'
+    
     end
   end
-
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to user_url(@pos), notice: "投稿を更新しました" }
+        format.html { redirect_to user_url(@post), notice: "投稿を更新しました" }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -38,14 +42,14 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :content,:image,:image_url,:image_cache)
+    params.require(:post).permit(:title,:content,:image,:image_url,:image_cache)
   end
   def set_post
     @post = Post.find(params[:id])
   end
 
   def access
-    unless @current_user.id && @post.user.id == @current_user.id
+    unless @current_user.id && @post.id == @current_user.id
     flash[:notice] = "権限がありません"
     redirect_to posts_path
     end
