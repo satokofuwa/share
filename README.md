@@ -65,5 +65,6 @@ Things you may want to cover:
 * Post New画面作成
 * rails g model post 実行
 * rails g controller posts 実行
+* post画面の作成
 
 

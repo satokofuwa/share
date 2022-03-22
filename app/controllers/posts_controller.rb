@@ -48,7 +48,7 @@ class PostsController < ApplicationController
     unless @current_user.id && @post.user.id == @current_user.id
     flash[:notice] = "権限がありません"
     redirect_to posts_path
-   end
- 
-
+    end
+  end
 end
+

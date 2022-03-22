@@ -1,10 +1,10 @@
 <h1>New Post</h1>
 
-<% if @like.errors.any? %>
+<% if @post.errors.any? %>
   <div id="error_explanation">
-    <h2><%=@like.errors.count %>件のエラーがあります</h2>
+    <h2><%=@post.errors.count %>件のエラーがあります</h2>
     <ul>
-    <% @user.errors.full_messages.each do |message| %>
+    <% @post.errors.full_messages.each do |message| %>
       <li><%= message %></li>
     <% end %>
     </ul>
@@ -19,7 +19,7 @@
   <%= f.text_field :content %>
 
   <%= f.label :image %>
-  <%= f.file.field :image %>
+  <%= f.file_field :image %>
 
   <%= f.submit "登録する" %>
 <% end %>
