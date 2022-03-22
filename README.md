@@ -58,4 +58,6 @@ Things you may want to cover:
 * users_helper current_user参照作成
 * 更新画面修正
 * favorites テーブル作成
+* model like 作成
+
 
