@@ -11,6 +11,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.user_id = @current_user.id
     if @post.save
         render :show, notice:'投稿に成功しました!'
     end
@@ -36,7 +37,6 @@ class PostsController < ApplicationController
 
   def show
     @like = current_user.likes.find_by(post_id: @post.id)
-    
   end
 
   private

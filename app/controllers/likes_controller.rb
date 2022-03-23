@@ -16,7 +16,7 @@ class LikesController < ApplicationController
     params.require(:like).permit(:name,:title,:content,:image,:image_url,:image_cache)
   end
   def set_likes
-    @like = current_user.likes.build(likes_params)
+    @like = current_user.likes.build(like_params)
   end
 
   end

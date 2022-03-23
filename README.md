@@ -70,5 +70,6 @@ Things you may want to cover:
 * post models修正
 *　エラー出力解消
 *  postテーブルにインデックスと外 部キーであるuser_idを作成
+*  お気に入り機能作成中
 
 
