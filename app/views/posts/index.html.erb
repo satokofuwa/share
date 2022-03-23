@@ -10,11 +10,14 @@
   <tbody>
     <% @posts.each do |p| %>
       <tr>
-        <td><%= p.image %></td>
+        <!--<td><%= p.image %></td>-->
+         <h4>Title</h4>
+         <h5><%= p.title %> </h5>
         <%= link_to "show_me", post_path(p.id) %> 
-        <td><%= p.title %> </td>
+    
 
          <% if  current_user.id == p.id%> 
+
         <td><%= link_to 'Edit', edit_post_path(p.id)%></td>
         <td><%= button_to 'Destroy',post_path(p.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>

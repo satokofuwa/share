@@ -68,5 +68,7 @@ Things you may want to cover:
 * post画面の作成
 * post index 画面修正
 * post models修正
+＊　エラー出力解消
+
 
 
