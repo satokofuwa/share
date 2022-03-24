@@ -71,5 +71,6 @@ Things you may want to cover:
 *　エラー出力解消
 *  postテーブルにインデックスと外 部キーであるuser_idを作成
 *  お気に入り機能作成中
-
+*  エラー修正<%=つけ忘れ　application cotroller 修正 model　修正
+*  戻る追加
 

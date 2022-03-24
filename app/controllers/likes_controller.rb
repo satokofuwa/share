@@ -2,13 +2,13 @@ class LikesController < ApplicationController
     before_action :set_likes, only: %i[ :create, :destroy ]
 
   def create
-    if @likes.save
-        redirect_to post_path, notice: "お気に入りに追加しました"
-    end
+    like = current_user.likes.create(post_id: params[:post_id])  
+        redirect_to posts_path, notice: "#{like.user.name}さんのお気に入りに追加しました"
+  end
 
   def destroy
-    @like.destroy
-    redirect_to post_path,notice: "お気に入りを削除しました"
+    like = current_user.likes.find_by(id: params[:id]).destroy
+    redirect_to posts_path,notice: "#{like.user.name}さんのお気に入りを削除しました"
   end
 
   private
@@ -19,7 +19,6 @@ class LikesController < ApplicationController
     @like = current_user.likes.build(like_params)
   end
 
-  end
 end
 
 

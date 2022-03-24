@@ -6,3 +6,4 @@
 <p>メールアドレス: <%= @user.email %></p>
 <p> パスワード: <%= @user.password %></p>
 <p> 画像: <%=image_tag (@user.image.url), size: '320x240' if @user.image && @user.image.url%></p>
+<%= link_to 'ALL POST',posts_path%>
