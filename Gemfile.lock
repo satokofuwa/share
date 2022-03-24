@@ -262,6 +262,7 @@ DEPENDENCIES
   pry-stack_explorer
   puma (~> 4.1)
   rails (~> 6.0.4, >= 6.0.4.7)
+  rexml
   sass-rails (>= 6)
   selenium-webdriver
   spring

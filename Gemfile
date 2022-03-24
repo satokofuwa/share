@@ -8,6 +8,8 @@ gem 'rails', '~> 6.0.4', '>= 6.0.4.7'
 #Middleware
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
+gem 'rexml'
+
 #view/Front
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 5.0'
