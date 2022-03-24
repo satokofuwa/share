@@ -1,11 +1,11 @@
 class ConfirmPostsMailerController < ApplicationController
-  before_action :set_contact, only: [:show, :edit, :update, :destroy]
+  before_action :set_comfirm, only: [:show, :edit, :update, :destroy]
       
    
     def create
       @confirm = Confirm.new(confirm_params)
       if @confirm.save
-         ConfirmPostsMailer.contact_mail(@confirm).deliver  
+         ConfirmPostsMailer.confirm_mail(@confirm).deliver  
          redirect_to confirms_path, notice: 'confirmation file was successfully sended.'
        else
           render :new
@@ -13,7 +13,7 @@ class ConfirmPostsMailerController < ApplicationController
     end
       
     private 
-      def set_contact
+      def set_confirm
         @confirm = Confirm.find(params[:id])
        end
       
