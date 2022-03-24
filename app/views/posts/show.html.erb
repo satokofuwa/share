@@ -2,10 +2,14 @@
 <p> image: <%= @post.image %></p>
 <p>Title: <%= @post.title %></p>
 <p> 画像: <%=image_tag (@post.image.url), size: '320x240' if @post.image && @post.image.url%></p>
-<% unless @post.user_id == @currrent_user %>
-  <% if @like.present? %>
-    <% link_to 'お気に入り解除', likes_path(id: @like.id), method: :delete,class: 'btn btn-danger'%>
+
+<% unless @post.user_id == @currrent_user %> 
+
+<!--postテーブルのユーザID（５番）とカレントユーザーのIDが一緒じゃないときに表示させる。
+自分が投稿した画面のページでは、true になる。-->
+  <% if @post.present? %>
+    <%= link_to 'お気に入り解除', likes_path, method: :delete,class: 'btn btn-danger'%>
   <% else %>
-    <% link_to 'お気に入りにする',likes_path(id: @like.id),method: :post,class: 'btn btn-primary'%>
+    <%=link_to 'お気に入りにする',likes_path,method: :post,class: 'btn btn-primary'%>
   <% end %>
 <% end %>

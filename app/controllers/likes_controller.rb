@@ -6,7 +6,7 @@ class LikesController < ApplicationController
         redirect_to post_path, notice: "お気に入りに追加しました"
     end
 
-  def delete
+  def destroy
     @like.destroy
     redirect_to post_path,notice: "お気に入りを削除しました"
   end

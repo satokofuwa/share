@@ -8,7 +8,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+   
   <body>
    <% flash.each do |key, value| %>
       <%= content_tag(:div, value, class: "#{key}") %>
@@ -22,8 +22,8 @@
       <%= link_to "Sign up", new_user_path %> |
       <%= link_to "Login", new_session_path %>|
     <% end %>
-      <%= link_to "View ALL Posts", posts_path%>
-    
+      <!--<%= link_to 'View ALL Posts',posts_path%> ログインした人に見せれば良い。-->
+      <!--login_required メソッドがApplicationコントローラにあるのでsession/newに戻ってしまう-->
     
     </div> 
     <p class="alert"><%= alert %></p>

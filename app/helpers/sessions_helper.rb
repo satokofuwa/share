@@ -6,11 +6,6 @@ module SessionsHelper
     def logged_in?
       current_user.present?
     end
-    
-    def choose_new
-      if action_name == 'new' 
-        sessions_path
-      end
-    end  
+     
   end
   
