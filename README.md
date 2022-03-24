@@ -77,4 +77,4 @@ Things you may want to cover:
 * View comfirm.html.erb作成
 * confirm_posts_mailer に名前を変えて再作成　View file
 * レターオープナーのルーティングを追加
-* 
+* confrim_post_mailer作成
