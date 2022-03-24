@@ -74,4 +74,4 @@ Things you may want to cover:
 *  エラー修正<%=つけ忘れ　application cotroller 修正 model　修正
 *  戻る追加
 * メイラーの作成
-
+* View comfirm.html.erb作成

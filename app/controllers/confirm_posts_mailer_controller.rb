@@ -1,0 +1,2 @@
+class ConfirmPostsMailerController < ApplicationController
+end
