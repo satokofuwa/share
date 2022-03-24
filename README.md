@@ -75,3 +75,6 @@ Things you may want to cover:
 *  戻る追加
 * メイラーの作成
 * View comfirm.html.erb作成
+* confirm_posts_mailer に名前を変えて再作成　View file
+* 
+* 
