@@ -15,10 +15,8 @@ class UsersController < ApplicationController
 
     def update
       respond_to do |format|
-        if @user.update(user_params)
-        
+        if @user.update(user_params)     
           ContactMailer.contact_mail(@user).deliver
-
           format.html { redirect_to user_url(@user), notice: "User was successfully updated." }
           format.json { render :show, status: :ok, location: @user }
         else
@@ -38,10 +36,7 @@ class UsersController < ApplicationController
       def user_params
         params.require(:user).permit(:name, :email, :password,:password_confirmation,:image,:image_url,:image_cache)
       end
-
       def set_user
         @user = User.find(params[:id])
       end
-
-end      
-      
+end
