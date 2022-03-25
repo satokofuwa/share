@@ -12,6 +12,6 @@
                  updated_at: updated_at,
                  image: image
                  )
-  end
+end
 
   

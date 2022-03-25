@@ -7,7 +7,6 @@ default: &default
 development:
   <<: *default
   database: share_development
-
  
 test:
   <<: *default
