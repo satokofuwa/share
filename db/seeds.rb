@@ -1,4 +1,4 @@
-10.times do |n|
+50.times do |n|
     name = Faker::Name.name
     email = Faker::Internet.email
     created_at = Faker::Date
@@ -8,7 +8,7 @@
     User.create!(name: name,
                  email: email,
                  password: password,
-                 create_at: create_at,
+                 created_at: created_at,
                  updated_at: updated_at,
                  image: image
                  )
