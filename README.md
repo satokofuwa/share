@@ -86,6 +86,10 @@ Things you may want to cover:
 * エラー再生の為、config修正
 * Faker 作成
 * contactsテーブル不要のため削除 model contact削除
+* config_consider_all_requests_local = trueに変更
 * Seedデータ投入コード作成
+* dotenv-rails インストール
+* gitignore 作成
+
 
 

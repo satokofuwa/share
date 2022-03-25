@@ -49,6 +49,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    redirect_to edit_user_path(current_user.id)
   end
 
   def show
