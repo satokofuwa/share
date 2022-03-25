@@ -94,5 +94,6 @@ Things you may want to cover:
 * I18n.config.available_locales = [:ja, :en]と変更
 * model contactsファイル削除
 * インデント修正　View edit.rbファイル削除
+* gem dotenvが重複していたので削除bundleコマンド実行
 
 
