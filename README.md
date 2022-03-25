@@ -78,3 +78,12 @@ Things you may want to cover:
 * confirm_posts_mailer に名前を変えて再作成　View file
 * レターオープナーのルーティングを追加
 * confrim_post_mailer作成
+* contactsテーブル作成
+* contacts viewファイル作成メイラー作成
+* post index修正
+* Bootstrap 機能追加
+* エラー画面作成
+* エラー再生の為、config修正
+* Faker 作成
+
+
