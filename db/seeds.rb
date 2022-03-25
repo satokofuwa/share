@@ -1,5 +1,5 @@
-50.times do |n|
-    name = Faker::Games::Pokemon.name
+10.times do |n|
+    name = Faker::Name.name
     email = Faker::Internet.email
     created_at = Faker::Date
     updated_at =Faker::Date

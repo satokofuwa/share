@@ -90,6 +90,8 @@ Things you may want to cover:
 * Seedデータ投入コード作成
 * dotenv-rails インストール
 * gitignore 作成
+* post から編集画面へのredirect 作成
+
 
 
 
