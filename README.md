@@ -85,5 +85,6 @@ Things you may want to cover:
 * エラー画面作成
 * エラー再生の為、config修正
 * Faker 作成
+* contactsテーブル不要のため削除 model contact削除
 
 
