@@ -12,15 +12,26 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user_id = @current_user.id
-    if @post.save
-        render :show, notice:'投稿に成功しました!'
+
+    respond_to do |format|
+      if @post.save
+        ContactMailer.contact_mail(@post).deliver
+        format.html { redirect_to post_url(@post), notice: "post confirmation was successfully sended. 
+          please check your e-mail" }
+        format.json { render :show, status: :created, location: @post }
+      else
+        format.html { render :new, status: :unprocessable_entity }
+        format.json { render json: @post.errors, status: :unprocessable_entity }
+      end
     end
+
   end
   
   def update
     respond_to do |format|
       if @post.update(post_params)
-        format.html { redirect_to user_url(@post), notice: "投稿を更新しました" }
+        ContactMailer.contact_mail(@post).deliver
+        format.html { redirect_to post_url(@post), notice: "投稿を更新しました" }
         format.json { render :show, status: :ok, location: @post }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -54,4 +65,3 @@ class PostsController < ApplicationController
     end
   end
 end
-

@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     def create
       @user = User.new(user_params)
         if @user.save
+          ContactMailer.contact_mail(@user).deliver
           redirect_to user_path(@user.id)
         end
     end
@@ -15,6 +16,9 @@ class UsersController < ApplicationController
     def update
       respond_to do |format|
         if @user.update(user_params)
+        
+          ContactMailer.contact_mail(@user).deliver
+
           format.html { redirect_to user_url(@user), notice: "User was successfully updated." }
           format.json { render :show, status: :ok, location: @user }
         else
