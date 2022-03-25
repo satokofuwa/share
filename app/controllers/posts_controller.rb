@@ -41,6 +41,11 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    @post.destroy
+      respond_to do |format|
+      format.html { redirect_to posts_url, notice: "Postsw was successfully destroyed." }
+      format.json { head :no_content }
+    end
   end
 
   def edit
@@ -59,7 +64,9 @@ class PostsController < ApplicationController
   end
 
   def access
-    unless @current_user.id && @post.id == @current_user.id
+    unless  @post.user_id == @current_user.id
+    
+    #unless @current_user.id && @post.id == @current_user.id
     flash[:notice] = "権限がありません"
     redirect_to posts_path
     end

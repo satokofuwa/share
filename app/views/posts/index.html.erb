@@ -1,25 +1,25 @@
 <table>
   <thead>
-  <th>ALL Posts</th>
-   <%= link_to 'New Post', new_post_path %><br>
+  <th>投稿内容</th>
+  <th>投稿者</th>
+
+  <button type="button" class="btn btn-primary"> <%= link_to 'New Post', new_post_path %></button>
   </thead>
 
   <tbody>
-      <tr> 
-          
             <% @posts.each do |p| %>
+            <tr> 
             <% if  current_user.id == p.user_id%> 
-              <td>Title</td>
               <td><%= p.title %></td>
               <td><%= p.user.name %></td>
-              <td><%= p.name %></td>
-              <td><%= link_to "show_me", post_path(p.id) %></td> 
+              <td><%= p.name %></td></td>
+              <td><%= link_to "show_me", post_path(p.id) %></td>
               <td><%= link_to 'Edit', edit_post_path(p.id)%></td>
               <td><%= button_to 'delete',post_path(p.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
             <%else%> 
               <td><%= link_to "show_me", post_path(p.id) %></td>
             <%end%>
+              </tr>
             <%end%>
-     </tr>
   </tbody>
 </table>
