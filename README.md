@@ -92,7 +92,7 @@ Things you may want to cover:
 * gitignore 作成
 * post から編集画面へのredirect 作成
 * I18n.config.available_locales = [:ja, :en]と変更
-
+* model contactsファイル削除
 
 
 

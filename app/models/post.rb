@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
-    mount_uploader :image, ImageUploader
-    belongs_to :user
-    has_many :likes, dependent: :destroy 
-    has_many :like_users, through: :likes, source: :user
+  mount_uploader :image, ImageUploader
+  belongs_to :user
+  has_many :likes, dependent: :destroy 
+  has_many :like_users, through: :likes, source: :user
 end
