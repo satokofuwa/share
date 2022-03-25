@@ -50,4 +50,3 @@ config.action_mailer.default_url_options = { host: 'murmuring-bastion-92338.hero
     authentication: :plain,
     enable_starttls_auto: true
   }
-end
