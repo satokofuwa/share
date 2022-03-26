@@ -1,0 +1,12 @@
+<h2>確認画面</h2>
+  <%= form_with(model: @post, local: true) do |form| %>
+    <%= image_tag (@post.image.url), size: '320x240' if @post.image && @post.image.url%>
+    <p class="abc"><strong>内容: <%= @post.content %></strong></p> 
+    <%= form.hidden_field :content %>
+    <br>
+    <br>
+    <%= form.hidden_field :image_cache %>
+    <%= form.submit "投稿する" %>
+  <% end %>
+    <%= link_to "投稿画面に戻る", new_post_path%>
+<br>

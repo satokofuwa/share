@@ -1,12 +1,19 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
   before_action :access,only: %i[edit destroy]
+  include PostsHelper
+
     def index
       @posts= Post.all
     end
 
     def new
       @post = Post.new
+    end
+
+    def confirm
+      @post = current_user.posts.build(post_params)
+      render :new  if @post.invalid?
     end
 
     def create
