@@ -97,5 +97,7 @@ Things you may want to cover:
 * gem dotenvが重複していたので削除bundleコマンド実行
 * config/root にroot sessions#new 設定 
 * .gitignoreに.envを入力 envfile作成
+* 投稿確認画面作成
+* 
 
 
