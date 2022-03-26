@@ -37,9 +37,7 @@ Rails.application.configure do
 
  
   config.active_record.dump_schema_after_migration = false
-
-end
-config.action_mailer.default_url_options = { host: 'glacial-river-33961.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'glacial-river-33961.herokuapp.com' }
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
     user_name: ENV['SENDGRID_USERNAME'],
@@ -50,3 +48,5 @@ config.action_mailer.default_url_options = { host: 'glacial-river-33961.herokuap
     authentication: :plain,
     enable_starttls_auto: true
   }
+
+end
