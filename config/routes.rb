@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     end
     resources :users, only: [:new, :create, :show, :edit, :update]
     resources :sessions, only: [:new, :create, :destroy]
-    resource :likes, only: [:create, :destroy]
+    resource :likes, only: [:create, :destroy, :show] 
     resource :contacts
     mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
 end

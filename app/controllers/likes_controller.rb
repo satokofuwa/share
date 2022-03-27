@@ -1,5 +1,5 @@
 class LikesController < ApplicationController
-  before_action :set_likes, only: %i[ :create, :destroy ]
+ before_action :set_params, only: %i[ :create. :destroy ]
 
   def create
     like = current_user.likes.create(post_id: params[:post_id])  
@@ -11,13 +11,12 @@ class LikesController < ApplicationController
     redirect_to posts_path,notice: "#{like.user.name}さんがお気に入りを削除しました"
   end
 
-  private
-  def like_params
-    params.require(:like).permit(:name,:title,:content,:image,:image_url,:image_cache)
+  def show
+    @likes = current_user.like_posts
   end
+
+  private
   def set_likes
     @like = current_user.likes.build(like_params)
-  end
+   end
 end
-
-

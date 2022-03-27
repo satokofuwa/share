@@ -6,13 +6,15 @@
   </thead>
 
   <tbody>
-            <% @posts.each do |p| %>
+            <% @likes.each do |p| %>
             <tr> 
             <% if  current_user.id == p.user_id%> 
               <td><%= p.title %></td>
               <td><%= p.user.name %></td>
-              <td><%= p.name %></td></td>
-              <td><%= p.image %></td></td>
+              <td><%= p.content %></td>
+              <td><%= p.image%></td></td>
+              <td><%=image_tag (p.image.url), size: '320x240' if p.image && p.image.url%></td>
+            
             <%end%>
               </tr>
             <%end%>

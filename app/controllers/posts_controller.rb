@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: %i[ show edit update destroy ]
+  before_action :set_post, only: %i[ show edit update destroy like ]
   before_action :access,only: %i[edit destroy]
   include PostsHelper
 
@@ -60,6 +60,7 @@ class PostsController < ApplicationController
     def show
       @like = current_user.likes.find_by(post_id: @post.id)
     end
+
 
   private
   def post_params
