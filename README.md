@@ -98,6 +98,9 @@ Things you may want to cover:
 * config/root にroot sessions#new 設定 
 * .gitignoreに.envを入力 envfile作成
 * 投稿確認画面作成
-* 
-
+* View like folder不要の為、削除
+* post image 型をtextに変更
+* likesテーブルにimageカラム追加
+* model like よりmount imageuploder 記述削除
+* 不要なデータ削除　ALL postから戻る機能追加
 
