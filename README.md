@@ -104,5 +104,6 @@ Things you may want to cover:
 * model like よりmount imageuploder 記述削除
 * 不要なデータ削除　ALL postから戻る機能追加
 * インデント修正
+* git commit -m "post controller accessメソッドからusercheckメソッドに変換"
 
 
