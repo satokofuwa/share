@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy like ]
-  before_action :access,only: %i[edit destroy]
+  before_action :usercheck,only: %i[edit destroy]
   include PostsHelper
 
   def index
@@ -71,7 +71,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
-  def access
+  def usercheck
     unless  @post.user_id == @current_user.id
       flash[:notice] = "権限がありません"
       redirect_to posts_path

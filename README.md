@@ -103,4 +103,6 @@ Things you may want to cover:
 * likesテーブルにimageカラム追加
 * model like よりmount imageuploder 記述削除
 * 不要なデータ削除　ALL postから戻る機能追加
+* インデント修正
+
 
