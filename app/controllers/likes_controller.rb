@@ -1,5 +1,5 @@
 class LikesController < ApplicationController
- before_action :set_params, only: %i[ :create. :destroy ]
+  before_action :set_params, only: %i[ :create. :destroy ]
 
   def create
     like = current_user.likes.create(post_id: params[:post_id])  
@@ -16,6 +16,7 @@ class LikesController < ApplicationController
   end
 
   private
+  
   def set_likes
     @like = current_user.likes.build(like_params)
    end
